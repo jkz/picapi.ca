@@ -1,0 +1,22 @@
+{
+  "1.jpg": {
+    name: "Image 1",
+    href: "#/pica/1",
+    src: "//placekitten.com/400/400",
+    caption: "Caption of image 1"
+  },
+  "2.jpg": {
+    name: "Image 2",
+    href: "#/pica/2",
+    src: "//placekitten.com/300/300",
+    caption: "Caption of image 2"
+  },
+  "3.jpg": {
+    name: "Image 3",
+    href: "#/pica/3",
+    src: "//placekitten.com/350/350",
+    caption: "Caption of image 3"
+  }
+}
+
+

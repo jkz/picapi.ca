@@ -1,10 +1,10 @@
   <div class=frame>
     <div class=title>
       <a name=favorite><i class=star></i></a>
-      <h2><a href="{{image.href}}">{{image.name}}</a></h2>
+      <h2><a ng-href="{{image.href}}">{{image.name}}</a></h2>
       <a name=report><i class=cross></i></a>
     </div>
-    <img data-url={{image.href}} src="{{image.src}}" />
+    <img data-url={{image.href}} ng-src="{{image.src}}" />
     <div class=caption>{{image.caption}}</div>
   </div>
 

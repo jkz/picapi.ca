@@ -1,14 +1,14 @@
 {
   "left": {
-    name: "Image 1",
-    href: "#/pica/1",
-    src: "//placekitten.com/400/400",
-    caption: "Caption of image 1"
+    "name": "Image 1",
+    "href": "#/pica/1",
+    "src": "//placekitten.com/400/400",
+    "caption": "Caption of image 1"
   },
   "right": {
-    name: "Image 2",
-    href: "#/pica/2",
-    src: "//placekitten.com/300/300",
-    caption: "Caption of image 2"
+    "name": "Image 2",
+    "href": "#/pica/2",
+    "src": "//placekitten.com/300/300",
+    "caption": "Caption of image 2"
   }
 }
