@@ -1,0 +1,14 @@
+<img src=//placekitten.com/80/80>
+<p>{{profile.name}}
+<p>{{profile.credentials}}
+
+<h3>Votes of {{profile.name}}</h3>
+<ul>
+  <li ng-repeat="vote in votes">
+    <vote vote-model="vote"></vote>
+</ul>
+
+<h3>Images of {{profile.name}}</h3>
+<ul>
+  <li class="image right" ng-repeat="image in images">
+    <pica image-model="image"></pica>

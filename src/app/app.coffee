@@ -1,6 +1,6 @@
 # Create all modules here
 
-angular.module '', [
+angular.module 'pica', [
   'templates-app',
   'templates-common',
 
@@ -36,6 +36,22 @@ angular.module '', [
     .state '404',
       url: '/404'
       templateUrl: '404.tpl.html'
+    .state 'battle',
+      url: '/'
+      templateUrl: 'views/main.html'
+      controller: 'MainCtrl'
+    .state 'ranks',
+      url: '/ranks'
+      templateUrl: 'views/top.html'
+      controller: 'RanksCtrl'
+    .state 'upload',
+      url: '/upload'
+      templateUrl: 'views/upload.html'
+      controller: 'UploadCtrl'
+    .state 'profile',
+      url: '/profile'
+      templateUrl: 'views/profile.html'
+      controller: 'ProfileCtrl'
 
 .run ($rootScope, $state, $stateParams) ->
   # Expose state parameters to the scope

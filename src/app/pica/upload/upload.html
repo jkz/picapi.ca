@@ -1,0 +1,37 @@
+<section id=upload>
+{{ message }}
+<form class="{#dropzone#} square" action=/upload/ method=post enctype=multipart/form-data>
+    <section class="upload current">
+    <h3>1. Bring the image</h3>
+    <img src={{image}}>
+    <span class=drop>
+      Drop an image or click here to upload
+    </span>
+    <span class=or>
+    -OR-
+    </span>
+    <span id=url-form>
+      <label for=input-url>Type or paste a url</label>
+      <input id=input-url name=url ng-model=image placeholder=http:// />
+    </span>
+    </section>
+
+    <section class=category>
+      <h3>2. Select the category</h3>
+      <ul>
+        <li ng-repeat="cat in categories">
+          <input id=radio-{{cat.slug}} type=radio name=category value={{cat.slug}} />
+          <label for=radio-{{cat.slug}}>{{cat.name}}</label>
+      </ul>
+    </section>
+
+
+    <aside class=help>
+      Your image should be at least 400 pixels wide or high.
+    </aside>
+
+    <section class=submit>
+      <input type=submit value="3. Submit!" />
+    </section>
+</form>
+</section>
